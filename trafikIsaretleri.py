@@ -215,7 +215,7 @@ score = model.evaluate(x_test, y_test, verbose=0)
 print('Test Score:', score[0])
 print('Test Accuracy:', score[1])
 
-# STORE THE MODEL AS A PICKLE OBJECT
+# MODELİ BİR PICKLE NESNE OLARAK SAKLAYIN 
 pickle_out = open("model_trained.p", "wb")  # wb = WRITE BYTE
 pickle.dump(model, pickle_out)
 pickle_out.close()
